@@ -1,9 +1,12 @@
 :root{
     --background : #1A1E23;
+    --background-color-Imperessum : #072713;
     --subtitles : #AEA19E;
     --text : #959393;
+    --font-Size : 1.25em;
     --leftRightMargin :4%;
     --padding-top : 2%;
+    --padding-bottom : 5%;
     --margin-bottom : 15%;
 }
 
@@ -23,15 +26,42 @@ body{
     min-height: 100v;
   }
 
+h1{
+    text-align: center;
+    font-family: "Archivo";
+    color: var(--subtitles);
+    padding-bottom: var(--padding-bottom);
+}
+
 h2{
-    font-size: 135%;
+    text-align: center;
+    font-family: "Archivo";
+    color: var(--subtitles);
+    padding-top: var(--padding-top);
+}
+h3{
+    text-align: center;
     font-family: "Archivo";
     color: var(--subtitles);
     padding-top: var(--padding-top);
 }
 
+header{
+    text-align: center;
+    font-size: 1.1em;
+    font-family: "Archivo";
+    color: var(--subtitles);
+    padding-top: var(--padding-top);
+}
+
+h5{
+    font-family: "Archivo";
+    color: var(--subtitles);
+    padding-bottom: var(--padding-bottom);
+}
+
 p {
-    font-size: 100%;
+    font-size: var(--font-Size);
     font-family: "Yu Gothic UI";
     color: var(--text);
     text-align: center;
@@ -40,13 +70,33 @@ p {
     margin-bottom: var(--padding-bottom);
 }
 
-li {
-    font-size: 100%;
+.impressum-links{
+    font-size: (--font-Size);
     font-family: "Yu Gothic UI";
     color: var(--text);
     line-height: 1.5;
-    padding-top: var(--padding-top);
-    margin-bottom: var(--padding-bottom);
+    list-style: none;
+    /* padding-top: var(--padding-top); */
+    margin-bottom: 0.5rem;
+}
+
+.impressum-text{
+    font-size: (--font-Size);
+    font-family: "Yu Gothic UI";
+    color: var(--text);
+    line-height: 1.5;
+    list-style: none;
+    /* padding-top: var(--padding-top); */
+    margin-bottom: 0.5rem;
+}
+
+li {
+    font-size: var(--font-Size);
+    font-family: "Yu Gothic UI";
+    color: var(--text);
+    line-height: 1.5;
+    /* padding-top: var(--padding-top); */
+    margin-bottom: 0.5rem;
 }
 
 .hello {
@@ -59,7 +109,7 @@ img {
     height: auto;
 }
 
-article{
+.description{
     margin-bottom: var(--margin-bottom);
 }
 
@@ -67,3 +117,51 @@ article{
     text-decoration: underline;
     color: #85CFF3;
 }
+
+.Impressum{
+    background-color: var(--background-color-Imperessum);
+    margin-bottom: var(--padding-bottom);
+}
+
+nav{
+  position: relative;
+  width: 1em;
+  height: 5%;
+}
+
+.nav{
+    list-style: none;
+    display: flex;
+}
+
+.nav:hover{
+    color: pink;
+
+}
+
+.inactive{
+    margin: 0 2.5em 0 0;
+    opacity: 0.4;
+    transition: all 0.4s ease;
+}
+
+.active{
+    margin: 0 2.5em 0 0;
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+
+a{
+    text-decoration: none;
+    color: #9BD3AE;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-size: 90%;
+}
+
+article{
+    margin-bottom: var(--padding-bottom);
+}
+

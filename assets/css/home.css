@@ -1,0 +1,74 @@
+@media screen and (min-width: 580px) {
+    .description{
+        display : grid;
+        width: auto;
+        height: auto;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto auto;
+        grid-gap: 1rem;
+        grid-template-areas:
+            "header header"
+            "sidebar content"
+    }
+
+    .description .description-title{
+        grid-area: header;
+    }
+
+    .description .description-text{
+        grid-area: content;
+    }
+
+    .description .imageDescription{
+        grid-area: sidebar;
+    }
+
+    .card{
+        display : grid;
+        width: auto;
+        height: auto;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto auto;
+        grid-gap: 1rem;
+        grid-template-areas:
+            "header header"
+            "sidebar content"
+    }
+
+    .card .card-title{
+        grid-area: header;
+    }
+
+    .card .hello{
+        grid-area: content;
+    }
+
+    .card .imageCard{
+        grid-area: sidebar;
+    }
+
+    .whyPlayIt{
+        display : grid;
+        width: auto;
+        height: auto;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto auto;
+        grid-gap: 1rem;
+        grid-template-areas:
+            "header header"
+            "sidebar content"
+    }
+
+    .whyPlayIt .whyPlayIt-title{
+        grid-area: header;
+    }
+
+    .whyPlayIt .whyPlayIt-text{
+        grid-area: content;
+    }
+
+    .whyPlayIt .imagewhyPlayIt{
+        grid-area: sidebar;
+    }
+
+}
