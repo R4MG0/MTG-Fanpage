@@ -1,0 +1,35 @@
+ nav{
+    width: 100vw;
+    height: 5%;
+  }
+  
+  .nav{
+      list-style: none;
+      display: flex;
+  }
+  
+  nav a:hover {
+      color: #fff;
+    }
+  
+  .inactive{
+      margin: 0 0.5em 0 0;
+      opacity: 0.4;
+      transition: all 0.4s ease;
+  }
+  
+  .active{
+      margin: 0 0.5em 0 0;
+      opacity: 1;
+      transition: all 0.4s ease;
+  }
+  
+  .nav-link{
+      text-decoration: none;
+      color: #9BD3AE;
+      text-transform: uppercase;
+      display: block;
+      font-weight: 600;
+      letter-spacing: .2em;
+      font-size: 90%;
+  } 

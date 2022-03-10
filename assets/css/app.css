@@ -1,10 +1,10 @@
 :root{
     --background : #1A1E23;
-    --background-color-Imperessum : #072713;
+    --background-color-Imperessum : #5b5c5b;
     --subtitles : #AEA19E;
     --text : #959393;
     --font-Size : 1.25em;
-    --leftRightMargin :4%;
+    --leftRightMargin :5%;
     --padding-top : 2%;
     --padding-bottom : 5%;
     --margin-bottom : 15%;
@@ -15,6 +15,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 main{
     margin-left: var(--leftRightMargin);
     margin-right: var(--leftRightMargin);
@@ -22,12 +23,16 @@ main{
 
 body{
     background-color: var(--background);
+    /* max-width: auto; */
     font-family: 'Lato', sans-serif;
     -webkit-font-smoothing: antialiased;
-    margin-top: 5%;
-
-    min-height: 100v;
+    margin-top: 1em;
+    min-height: 100vh;
   }
+
+ul{
+    word-break: break-word;
+}
 
 h1{
     text-align: center;
@@ -58,6 +63,8 @@ header{
 }
 
 h5{
+    font-size: var(--font-Size);
+    text-align: center;
     font-family: "Archivo";
     color: var(--subtitles);
     padding-bottom: var(--padding-bottom);
@@ -84,6 +91,7 @@ p {
 }
 
 .impressum-text{
+    text-align: center;
     font-size: (--font-Size);
     font-family: "Yu Gothic UI";
     color: var(--text);
@@ -110,6 +118,7 @@ li {
 img {
     width: 100%;
     height: auto;
+    margin-bottom: 0.5rem;
 }
 
 .description{
@@ -126,42 +135,6 @@ img {
     margin-bottom: var(--padding-bottom);
 }
 
-nav{
-  position: relative;
-  width: 1em;
-  height: 5%;
-  margin-left: var(--leftRightMargin);
-  margin-right: var(--leftRightMargin);
-}
-
-.nav{
-    list-style: none;
-    display: flex;
-}
-
-.inactive{
-    margin: 0 2.5em 0 0;
-    opacity: 0.4;
-    transition: all 0.4s ease;
-}
-
-.active{
-    margin: 0 2.5em 0 0;
-    opacity: 1;
-    transition: all 0.4s ease;
-}
-
-.nav-link{
-    text-decoration: none;
-    color: #9BD3AE;
-    text-transform: uppercase;
-    display: block;
-    font-weight: 600;
-    letter-spacing: .2em;
-    font-size: 90%;
-}
-
 article{
     margin-bottom: var(--padding-bottom);
 }
-
