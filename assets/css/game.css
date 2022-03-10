@@ -1,0 +1,79 @@
+@media screen and (min-width: 580px) {
+    .drafting{
+        display : grid;
+        width: auto;
+        height: auto;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto auto;
+        grid-gap: 1rem;
+        grid-template-areas:
+            "header header"
+            "sidebar content"
+    }
+
+    .drafting .drafting-title{
+        grid-area: header;
+    }
+
+    .drafting .drafting-text{
+        grid-area: content;
+    }
+
+    .drafting .imageDraft{
+        grid-area: sidebar;
+    }
+
+    .standard{
+        display : grid;
+        width: auto;
+        height: auto;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto auto;
+        grid-gap: 1rem;
+        grid-template-areas:
+            "header header"
+            "sidebar content"
+    }
+
+    .standard .standard-title{
+        grid-area: header;
+    }
+
+    .standard .hello .standard-text{
+        grid-area: content;
+    }
+
+    .standard .imageStandard{
+        grid-area: sidebar;
+    }
+
+    .commander{
+        display : grid;
+        width: auto;
+        height: auto;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto auto;
+        grid-gap: 1rem;
+        grid-template-areas:
+            "header header"
+            "sidebar content"
+    }
+
+    .commander .commander-title{
+        grid-area: header;
+    }
+
+    .commander .hallo .commander-text{
+        grid-area: content;
+    }
+
+    .commander .imageCommander{
+        grid-area: sidebar;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    main{
+        display: flex;
+    }
+}

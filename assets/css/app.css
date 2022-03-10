@@ -15,14 +15,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+main{
+    margin-left: var(--leftRightMargin);
+    margin-right: var(--leftRightMargin);
+}
 
 body{
     background-color: var(--background);
     font-family: 'Lato', sans-serif;
     -webkit-font-smoothing: antialiased;
     margin-top: 5%;
-    margin-left: var(--leftRightMargin);
-    margin-right: var(--leftRightMargin);
+
     min-height: 100v;
   }
 
@@ -127,16 +130,13 @@ nav{
   position: relative;
   width: 1em;
   height: 5%;
+  margin-left: var(--leftRightMargin);
+  margin-right: var(--leftRightMargin);
 }
 
 .nav{
     list-style: none;
     display: flex;
-}
-
-.nav:hover{
-    color: pink;
-
 }
 
 .inactive{
@@ -151,7 +151,7 @@ nav{
     transition: all 0.4s ease;
 }
 
-a{
+.nav-link{
     text-decoration: none;
     color: #9BD3AE;
     text-transform: uppercase;

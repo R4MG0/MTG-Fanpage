@@ -1,0 +1,84 @@
+@media screen and (min-width: 580px) {
+    .display{
+        display : grid;
+        width: auto;
+        height: auto;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto auto;
+        grid-gap: 1rem;
+        grid-template-areas:
+            "header header"
+            "sidebar content"
+    }
+
+    .display .display-title {
+        grid-area: header;
+    }
+
+
+    .display .display-text{
+        grid-area: content;
+    }
+
+    .display .imageDisplay{
+        grid-area: sidebar;
+    }
+
+    .link{
+        grid-column: 1;
+    }
+
+    .booster{
+        display : grid;
+        width: auto;
+        height: auto;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto auto;
+        grid-gap: 1rem;
+        grid-template-areas:
+            "header header"
+            "sidebar content"
+    }
+
+    .booster .booster-title{
+        grid-area: header;
+    }
+
+    .booster .booster-text{
+        grid-area: content;
+    }
+
+    .booster .imageBooster{
+        grid-area: sidebar;
+    }
+
+    .bundle{
+        display : grid;
+        width: auto;
+        height: auto;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto auto;
+        grid-gap: 1rem;
+        grid-template-areas:
+            "header header"
+            "sidebar content"
+    }
+
+    .bundle .bundle-title{
+        grid-area: header;
+    }
+
+    .bundle .bundle-text{
+        grid-area: content;
+    }
+
+    .bundle .imageBundle{
+        grid-area: sidebar;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    main{
+        display: flex;
+    }
+}

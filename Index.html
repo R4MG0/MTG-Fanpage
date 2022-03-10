@@ -10,16 +10,16 @@
             <nav>
                 <ul class="nav">
                     <li class="active">
-                        <a href="/Index.html">Home</a>
+                        <a class="nav-link" href="/Index.html">Home</a>
                     </li>
                     <li class="inactive">
-                        <a href="assets/html/gamesIndex.html">Games</a>
+                        <a class="nav-link" href="assets/html/gamesIndex.html">Games</a>
                     </li>
                     <li class="inactive">
-                        <a href="assets/html/productsIndex.html">Products</a>
+                        <a class="nav-link" href="assets/html/productsIndex.html">Products</a>
                     </li>
                     <li class="inactive">
-                        <a href="assets/html/rulesIndex.html">Rules</a>
+                        <a class="nav-link" href="assets/html/rulesIndex.html">Rules</a>
                     </li>
                 </ul>
             </nav>
@@ -27,7 +27,7 @@
             <main>
                 <section>
                     <article class="description">
-                        <img class="imageDescription" src="/assets/Pictures/mtgLogo.jpg">
+                        <img class="imageDescription" src="/assets/Pictures/mtgLogo.jpg" alt="it is a picture about magic the Gathering">
                         <h2 class="description-title">What is Magic the Gathering?</h2>
                         <p class="description-text">
                             Magic: The Gathering (colloquially known as Magic or MTG) is a tabletop and digital collectible card game created by Richard Garfield.
@@ -37,7 +37,7 @@
                         </p>
                     </article>
                     <article class="card">
-                        <img class="imageCard" src="/assets/Pictures/cardExplaind.jpg">
+                        <img class="imageCard" src="/assets/Pictures/cardExplaind.jpg" alt="It is a Picture of a Card">
                         <h2 class="card-title" >How does a card look like?</h2>
                         <ul class="hello">
                             <li>On the top left corner you can see the Name.</li>
@@ -46,11 +46,15 @@
                             <li>Under the picture are the type and subtype held.</li>
                             <li>In the box (bottom) you can read the ability of the card.</li>
                             <li>On the bottom right corner you can see the damage and the thoughness of this card.</li>
-                            <li>If you want more infos click on this <span id="link" class="link">link</span> </li>
+                            <li>If you want more infos click on this 
+                                <a class="link" href="https://magic.wizards.com/en/articles/archive/magic-academy/anatomy-magic-card-2006-10-21" target="_blank">
+                                link
+                                </a> 
+                            </li>
                         </ul>
                     </article>
                     <article class="whyPlayIt">
-                        <img class="imageWhyPlayIt" src="/assets/Pictures/whyPlayThisGame.jpg">
+                        <img class="imageWhyPlayIt" src="/assets/Pictures/whyPlayThisGame.jpg" alt="It is a picture of two, that are playing mtg">
                         <h2 class="whyPlayIt-title">Why should I play it?</h2>
                         <p class="whyPlayIt-text">
                             Magic the gathering cards are worth collecting most notably because of the undeniable fact that they enable you build the best deck over time. 
@@ -61,38 +65,44 @@
                     </article>
                 </section>
             </main>
-            <section>
-                <article class="Impressum">
-                    <h5>Text: 
-                        <ul>
-                            <li class="impressum-text">
-                                A large part of the text I wrote myself. The rest of the info I got from Google and from the MTG page.
-                            </li>
-                        </ul>
-                    </h5>
-                    <h5>Pictures: 
-                        <ul>
-                            <li class="impressum-text">
-                                The pictures come from google pictures.
-                            </li>
-                        </ul>
-                    </h5>
-                    <h5>Links: 
-                        <ul>
-                            <li class="impressum-links">
-                                <span class="link" id="link">
-                                    https://magic.wizards.com/en/articles/archive/magic-academy/anatomy-magic-card-2006-10-21
-                                </span>
-                            </li>
-                            <li class="impressum-links">
-                                <span class="link" id="wikipedia">
-                                https://en.wikipedia.org/wiki/Magic:_The_Gathering
-                                </span>
-                            </li>
-                        </ul>
-                    </h5>
-                </article>
-            </section>
-              <script src="/assets/js/script.js"></script>
+            <footer>
+                <section>
+                    <article class="Impressum">
+                        <h5>Text: 
+                            <ul>
+                                <li class="impressum-text">
+                                    A large part of the text I wrote myself. The rest of the info I got from Google and from the MTG page.
+                                </li>
+                            </ul>
+                        </h5>
+                        <h5>Pictures: 
+                            <ul>
+                                <li class="impressum-text">
+                                    The pictures come from google pictures.
+                                </li>
+                            </ul>
+                        </h5>
+                        <h5>Links: 
+                            <ul>
+                                <li class="impressum-links">
+                                    <a class="link" href="https://magic.wizards.com/en/articles/archive/magic-academy/anatomy-magic-card-2006-10-21" target="_blank">
+                                        https://magic.wizards.com/en/articles/archive/magic-academy/anatomy-magic-card-2006-10-21
+                                    </a>
+                                </li>
+                                <li class="impressum-links">
+                                    <a class="link" href="https://en.wikipedia.org/wiki/Magic:_The_Gathering" target="_blank">
+                                    https://en.wikipedia.org/wiki/Magic:_The_Gathering
+                                    </a>
+                                </li>
+                            </ul>
+                        </h5>
+                        <h5>
+                            Jokes:
+                        </h5>
+                            <h1 id="joke"></h1>
+                    </article>
+                </section>
+            </footer>
+            <script src="/assets/js/script.js"></script>
         </body>
     </html>

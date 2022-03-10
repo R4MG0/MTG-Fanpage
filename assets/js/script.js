@@ -1,5 +1,11 @@
 // alert("This Website is just a Fanpage");
 
-document.getElementById("link").addEventListener("click",  event => open("https://magic.wizards.com/en/articles/archive/magic-academy/anatomy-magic-card-2006-10-21", "_blank"));
-document.getElementById("wikipedia").addEventListener("click",  event => open("https://en.wikipedia.org/wiki/Magic:_The_Gathering"));
-document.getElementById("commanderInformations").addEventListener("click",  event => open("https://magic.wizards.com/de/formats/commander"));
+async function getJoke () {
+    const response = await fetch('https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single');
+    const completejson = await response.json();
+    const joke = completejson.joke;
+    console.log(joke);
+    document.getElementById('joke').innerHTML = joke;
+}
+
+getJoke();
