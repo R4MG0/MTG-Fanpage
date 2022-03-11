@@ -1,4 +1,7 @@
 @media screen and (min-width: 580px) {
+    footer ul {
+        text-align: center;
+    }
     .description{
         display : grid;
         width: auto;
@@ -17,6 +20,7 @@
 
     .description .description-text{
         grid-area: content;
+        text-align: center;
     }
 
     .description .imageDescription{
@@ -69,6 +73,17 @@
 
     .whyPlayIt .imagewhyPlayIt{
         grid-area: sidebar;
+    }
+
+    .description-text{
+        text-align: left;
+        display: flex;
+        align-items: center;
+    }
+    .whyPlayIt-text{
+        text-align: left;
+        display: flex;
+        align-items: center;
     }
 
 }

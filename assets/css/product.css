@@ -1,4 +1,7 @@
 @media screen and (min-width: 580px) {
+    footer ul {
+        text-align: center;
+    }
     .display{
         display : grid;
         width: auto;
@@ -74,6 +77,22 @@
 
     .bundle .imageBundle{
         grid-area: sidebar;
+    }
+
+    .display-text{
+        text-align: left;
+        display: flex;
+        align-items: center;
+    }
+    .booster-text{
+        text-align: left;
+        display: flex;
+        align-items: center;
+    }
+    .bundle-text{
+        text-align: left;
+        display: flex;
+        align-items: center;
     }
 }
 

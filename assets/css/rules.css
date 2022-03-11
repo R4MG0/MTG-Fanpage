@@ -1,3 +1,13 @@
 .basicRules{
-    padding-bottom: 13em;
+    padding-bottom: 6em;
+}
+
+#joke{
+    padding-bottom: 4em;
+}
+
+@media screen and (min-width: 580px) {
+    footer ul {
+        text-align: center;
+    }
 }

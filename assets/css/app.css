@@ -1,6 +1,6 @@
 :root{
     --background : #1A1E23;
-    --background-color-Imperessum : #5b5c5b;
+    --background-color-Imperessum : #182126;
     --subtitles : #AEA19E;
     --text : #959393;
     --font-Size : 1.25em;
@@ -46,6 +46,7 @@ h2{
     font-family: "Archivo";
     color: var(--subtitles);
     padding-top: var(--padding-top);
+    padding-bottom: 1em;
 }
 h3{
     text-align: center;
@@ -67,7 +68,7 @@ h5{
     text-align: center;
     font-family: "Archivo";
     color: var(--subtitles);
-    padding-bottom: var(--padding-bottom);
+    padding-bottom: 1em;
 }
 
 p {
@@ -81,7 +82,7 @@ p {
 }
 
 .impressum-links{
-    font-size: (--font-Size);
+    font-size: var(--font-Size);
     font-family: "Yu Gothic UI";
     color: var(--text);
     line-height: 1.5;
@@ -92,7 +93,7 @@ p {
 
 .impressum-text{
     text-align: center;
-    font-size: (--font-Size);
+    font-size: var(--font-Size);
     font-family: "Yu Gothic UI";
     color: var(--text);
     line-height: 1.5;
@@ -130,11 +131,11 @@ img {
     color: #85CFF3;
 }
 
-.Impressum{
+footer{
     background-color: var(--background-color-Imperessum);
     margin-bottom: var(--padding-bottom);
 }
 
 article{
-    margin-bottom: var(--padding-bottom);
+    margin-bottom: 4em;
 }

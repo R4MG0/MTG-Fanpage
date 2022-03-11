@@ -1,4 +1,7 @@
 @media screen and (min-width: 580px) {
+    footer ul {
+        text-align: center;
+    }
     .drafting{
         display : grid;
         width: auto;
@@ -22,6 +25,8 @@
     .drafting .imageDraft{
         grid-area: sidebar;
     }
+
+
 
     .standard{
         display : grid;
@@ -70,10 +75,29 @@
     .commander .imageCommander{
         grid-area: sidebar;
     }
+    .standard-text{
+        text-align: left;
+        display: flex;
+        align-items: center;
+    }
+    .drafting-text{
+        text-align: left;
+        display: flex;
+        align-items: center;
+    }
+    .commander-text{
+        text-align: left;
+        display: flex;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 1400px) {
     main{
         display: flex;
     }
+}
+
+.commander-link{
+    padding-bottom: 1em;
 }
